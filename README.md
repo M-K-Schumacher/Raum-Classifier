@@ -1,7 +1,7 @@
 # Raum-Classifier
 In diesem Repository finden Sie einen Raum-Classifier, der mit dem StanfordNER kompatibel ist, sowie dazugehörige Trainingsdaten. 
 
-Im Unterordner Raum-Classifier finden Sie zwei Classifier, die mit dem StanfordNER kompatibel sind. Die Datei "Raum320000_18-21_ner-model" entält einen Classifier, der sieben Raum-Kategorien umfasst:
+Die Datei "Raum320000_18-21_ner-model" ist ein Raum-Classifier mit sieben Unterkategorien, die mit dem StanfordNER kompatibel sind. Die Datei "Raum320000_18-21_ner-model_ohneMetaphern" entält den gleichen Classifier mit sechs Raum-Kategorien (Metaphern sind hier weggelassen). Die Kategorien sind:
 Ort
 Relation
 relationeles Verb
@@ -10,7 +10,7 @@ Raumbeschreibung
 Raumthema
 Raummetapher
 
-Die Datei "Raum320000_18-21_ner-model_ohneMetaphern" finden Sie einen Raum-Classifier, der sechs der oben genannten Kategorien umfasst, Raummetaphern aber ausschließt. Dies ist die empfohlene Version zur Anwendung. 
+Die Datei "Raum320000_18-21_ner-model_ohneMetaphern" ist die empfohlene Version zur Anwendung. 
 
 Beide Classifier können wie folgt verwendet werden:
 
