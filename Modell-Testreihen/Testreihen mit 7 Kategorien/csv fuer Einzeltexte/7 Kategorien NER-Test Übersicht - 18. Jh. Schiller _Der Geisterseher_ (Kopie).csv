@@ -1,0 +1,47 @@
+Tests mit jahrhundertspezifischen Trainingskorpora von jeweils 40.000 Tokens,,,,,,,,
+,ORT,RELATION,RAUMTHEMA,RAUMHINWEIS,RAUMMETAPHER,RAUMBESCHREIBUNG,RELATIONALES VERB,Gesamt
+18. Jahrhundert,"60,91","57,61","24,49","47,42","0,08","8,2","43,63","48,01"
+19. Jahrhundert,"53,11","59,95","45,48","50,63",0,"12,68","53,35","52,4"
+20. Jahrhundert,"60,08","59,71","42,44","49,21",0,"27,22","51,79","52,44"
+21. Jahrhundert,"55,98","57,02","34,57","39,95","0,09","24,68","33,83","44,38"
+,,,,,,,,
+Tests mit Trainingsdaten aus dem 18. Jahrhundert,,,,,,,,
+40000,"60,91","57,61","24,49","47,42","0,08","8,2","43,63","48,01"
+60000,"64,31","61,77","38,55","53,13",0,"17,27","53,32","55,67"
+80000,"65,42","62,75","42,11","54,08",0,20,"55,37","57,2"
+,,,,,,,,
+Tests mit kumulierten Daten aus vier Jahrhunderten (jeweils 40.000 Tokens),,,,,,,,
+Tokens,ORT,RELATION,RAUMTHEMA,RAUMHINWEIS,RAUMMETAPHER,RAUMBESCHREIBUNG,RELATIONALES VERB,Gesamt
+40000 (18. Jh.),"60,91","57,61","24,49","47,42","0,08","8,2","43,63","48,01"
+80000 (18. & 19. Jh.),"68,12","64,09","49,44","54,06","2,36","19,12","56,91","57,61"
+120000 (18.-20. Jh.),"70,76",67,"58,1","56,6","4,95","32,05","62,22","61,06"
+160000 (18.-21. Jh.),"72,7","68,18","62,38","58,22","7,14","33,96","61,25","61,97"
+,,,,,,,,
+Tests mit kumulierten Daten aus vier Jahrhunderten (jeweils 60.000 Tokens),,,,,,,,
+Tokens,ORT,RELATION,RAUMTHEMA,RAUMHINWEIS,RAUMMETAPHER,RAUMBESCHREIBUNG,RELATIONALES VERB,Gesamt
+60000,"64,31","61,77","38,55","53,13",0,"17,27","53,32","55,67"
+120000,"70,95","67,02","58,33","57,73",0,"32,18","61,83","62,54"
+180000,"73,1","69,88","64,11","60,2",0,"42,49","65,53","65,52"
+240000,"73,52","70,85","66,67","59,3",0,"42,27","63,81","65,51"
+,,,,,,,,
+Test nach Konsistenzerhöhung der Trainingsdaten,,,,,,,,
+Tokens,ORT,RELATION,RAUMTHEMA,RAUMHINWEIS,RAUMMETAPHER,RAUMBESCHREIBUNG,RELATIONALES VERB,Gesamt
+240000 verbessert,"72,54","68,47","66,05","57,85",0,"41,49","60,84","63,48"
+240000 verbessert auf verbessertem Textauszug (10000 Tokens),"82,28","78,9","68,09","66,67","10,26","54,79","74,71","73,04"
+,,,,,,,,
+Tests mit teilweise automatisch annotierten Trainingsdaten,,,,,,,,
+Tokens,ORT,RELATION,RAUMTHEMA,RAUMHINWEIS,RAUMMETAPHER,RAUMBESCHREIBUNG,RELATIONALES VERB,Gesamt
+200000 / 18-19 40% automatisch,"84,35","77,3","60,15","61,04","5,88",50,"70,5","69,84"
+300000 / 18-20 40% automatisch,"83,75","79,46","69,01","64,56","12,5","56,34","73,51","72,78"
+400000 / 40% automatisch / testtext kurz (10000),"84,74","78,76","68,09","64,48","16,67","53,52","73,18","73,09"
+,,,,,,,,
+Tests mit verdoppelten Trainingsdaten,,,,,,,,
+Tokens,ORT,RELATION,RAUMTHEMA,RAUMHINWEIS,RAUMMETAPHER,RAUMBESCHREIBUNG,RELATIONALES VERB,Gesamt
+480000 doppeltes Korpus,"85,2","79,03","69,93","67,54","15,38","54,79","75,18","73,69"
+640000 doppelt,"84,64","83,59","77,12","73,22","13,33","60,53","80,39","78,7"
+640000 ohne Metaphern,"87,06","83,03","75,5","73,91",,"65,79","80,82","79,81"
+,,,,,,,,
+Tests nach Ausweitung des Trainingskorpus auf 320.000 Tokens mit und ohne Metaphern,,,,,,,,
+Tokens,ORT,RELATION,RAUMTHEMA,RAUMHINWEIS,RAUMMETAPHER,RAUMBESCHREIBUNG,RELATIONALES VERB,Gesamt
+320000,"85,63","83,67","76,32","72,48","14,29","58,67","79,09","78,19"
+320000 ohne Metaphern,"87,24","83,08","74,67","74,29",,64,"80,47","79,7"
