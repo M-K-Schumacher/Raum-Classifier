@@ -1,7 +1,7 @@
 # Raum-Classifier
 In diesem Repository finden Sie einen Raum-Classifier, der mit dem StanfordNER kompatibel ist, sowie dazugehörige Trainingsdaten. 
 
-Im Unterordner Raum-Classifier finden Sie zwei Classifier, die mit dem StanfordNER kompatibel sind. Die Datei "Raum320000_18-21_ner-model" entält einen Classifier, der sieben Raum-Kategorien umfasst:
+Die Datei "Raum320000_18-21_ner-model" ist ein Raum-Classifier mit sieben Unterkategorien, die mit dem StanfordNER kompatibel sind. Die Datei "Raum320000_18-21_ner-model_ohneMetaphern" entält den gleichen Classifier mit sechs Raum-Kategorien (Metaphern sind hier weggelassen). Die Kategorien sind:
 Ort
 Relation
 relationeles Verb
@@ -10,7 +10,16 @@ Raumbeschreibung
 Raumthema
 Raummetapher
 
-Die Datei "Raum320000_18-21_ner-model_ohneMetaphern" finden Sie einen Raum-Classifier, der sechs der oben genannten Kategorien umfasst, Raummetaphern aber ausschließt. Dies ist die empfohlene Version zur Anwendung. 
+Die Datei "Raum320000_18-21_ner-model_ohneMetaphern" ist die empfohlene Version zur Anwendung. 
+
+Der Classifier erreicht auf 8 Testtexten aus vier Jahrhunderten einen durchschnittlichen gesamt-F1-Score von 75,57%. Die durchschnittlichen F1-Scores der einzelnen Kategorien betragen:
+Ort - 80,24%
+Relation - 77,95%
+relationeles Verb - 75,66%
+Raumhinweis - 72,23%
+Raumbeschreibung - 60,72%
+Raumthema - 74,22%
+Raummetapher - 7,74%
 
 Beide Classifier können wie folgt verwendet werden:
 
@@ -31,4 +40,4 @@ Außerdem in diesem Repository zu finden sind:
 - die Dokumentation von Tests eines ersten, nicht implementierten Modells (Ordner "Vorabtests - nicht implementierte Varianten")
 - Anzahl der Annotationen im Trainingskorpus (im Ordner "Testreihen mit 7 Kategorien")
 
-Imformationen und Daten zum Trainig des Raum-Classifiers finden sich im Ordner "Training CRF-Classifier". Hierin ist eine Auflistung der Texte im Trainingskorpus enthalten. Aus jedem der aufgelisteten Texte wurden 4.000 Tokens direkt vom Anfang entnommen und ins Trainingskorpus integriert. Das Trainingskorpus besteht insgesamt aus 320.000 Tokens aus 80 Romanen aus vier Jahrhunderten (18-21). Annotierte Trainingsdaten im Tabellenformat TSV (kompatibel mit dem StanfordNER-Tool) finden sich im Unterordner "Trainingsdaten". Die Trainingsdaten aus dem 20. und 21. Jahrhundert enthalten urheberrechtlich geschütztes Material und können darum nicht öffentlich zugänglich gemacht werden. Die Trainingsdaten aus dem 18. und 19. Jahrhundert können jahrhundertweise heruntergeladen werden. Sowohl die Variante mit als auch die ohne Metaphern steht zur Nachnutzung zur Verfügung. Das Trainingskorpus umfasst 80.000 Tokens / Jahrhundert.
+Imformationen und Daten zum Trainig des Raum-Classifiers finden sich im Ordner "Training CRF-Classifier". Hierin ist eine Auflistung der Texte im Trainingskorpus enthalten. Aus jedem der aufgelisteten Texte wurden 4.000 Tokens direkt vom Anfang entnommen und ins Trainingskorpus integriert. Das Trainingskorpus besteht insgesamt aus 320.000 Tokens aus 80 Romanen aus vier Jahrhunderten (18-21). Annotierte Trainingsdaten im Tabellenformat TSV (kompatibel mit dem StanfordNER-Tool) finden sich im Unterordner "Trainingsdaten". Die Trainingsdaten aus dem 20. und 21. Jahrhundert enthalten urheberrechtlich geschütztes Material und können darum nicht öffentlich zugänglich gemacht werden. Die Trainingsdaten aus dem 18. und 19. Jahrhundert können jahrhundertweise heruntergeladen werden. Sowohl die Variante mit als auch die ohne Metaphern steht zur Nachnutzung zur Verfügung. Das Trainingskorpus umfasst 80.000 Tokens / Jahrhundert. Informationen zu den im Raum-Classifier implementierten Features können in der Properties-Datei "Raum.prop" eingesehen werden.
