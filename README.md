@@ -12,6 +12,15 @@ Raummetapher
 
 Die Datei "Raum320000_18-21_ner-model_ohneMetaphern" ist die empfohlene Version zur Anwendung. 
 
+Der Classifier erreicht auf 8 Testtexten aus vier Jahrhunderten einen durchschnittlichen gesamt-F1-Score von 75,57%. Die durchschnittlichen F1-Scores der einzelnen Kategorien betragen:
+Ort - 80,24%
+Relation - 77,95%
+relationeles Verb - 75,66%
+Raumhinweis - 72,23%
+Raumbeschreibung - 60,72%
+Raumthema - 74,22%
+Raummetapher - 7,74%
+
 Beide Classifier können wie folgt verwendet werden:
 
 1. Laden Sie sich die Classifier herunter
